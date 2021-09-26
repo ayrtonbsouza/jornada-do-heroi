@@ -79,3 +79,6 @@ def portal():
         sala_4()
     elif randomico == 5:
         sala_5()
+
+
+sala_1()
