@@ -15,6 +15,8 @@ def sala_1():
 
 
 def sala_2():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 2: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -26,6 +28,8 @@ def sala_2():
 
 
 def sala_3():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 3: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -37,6 +41,8 @@ def sala_3():
 
 
 def sala_4():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 4: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -48,6 +54,8 @@ def sala_4():
 
 
 def sala_5():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 5: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -59,6 +67,8 @@ def sala_5():
 
 
 def sala_6():
+    global rodada
+    rodada += 1
     print('Sala 6: \nAqui você só tem um caminho, o da Esquerda\n, seguindo para próxima sala.\n')
     if rodada < 7:
         sala_8()
@@ -67,6 +77,8 @@ def sala_6():
 
 
 def sala_7():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 7: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -78,6 +90,8 @@ def sala_7():
 
 
 def sala_8():
+    global rodada
+    rodada += 1
     opcao = input(
         'Sala 8: \nSelecione um caminho: \n 1 - Direita \n 2 - Esquerda\n')
     if opcao == '1' and rodada < 7:
@@ -89,10 +103,14 @@ def sala_8():
 
 
 def sala_9():
+    global rodada
+    rodada += 1
     print('Sala 9: \nParabéns, você venceu!\n')
 
 
 def portal():
+    global rodada
+    rodada += 1
     randomico = randint(1, 5)
     print('Você caiu em um portal, que randomicamente te levou à sala ', randomico, '\n')
     if randomico == '1':
